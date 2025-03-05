@@ -1,7 +1,7 @@
 import mido
 import time
 
-# Define the main melody notes of the Monty Python theme (The Liberty Bell by John Philip Sousa)
+# Define the main melody notes of the Monty Python theme
 # Using MIDI note numbers where 60 is middle C
 notes = [
     72, 76, 79, 72, 76, 79,  # First phrase
@@ -61,4 +61,5 @@ def play_monty_python_theme():
 
 if __name__ == "__main__":
     print("Playing the Monty Python theme (The Liberty Bell) on Korg device...")
-    play_monty_python_theme()
+    for i in range(3):
+        play_monty_python_theme()

@@ -24,7 +24,7 @@ def generate_qr_code(text, filepath="qrcode.svg"):
 
     return absolute_filepath
 
-# Example usage
-# text_to_encode = "https://example.com"
-# result_filepath = generate_qr_code(text_to_encode)
-# print(f"QR code saved at: {result_filepath}")
+if __name__ == "__main__":
+    text_to_encode = "https://github.com/octaflop/rhythms"
+    result_filepath = generate_qr_code(text_to_encode)
+    print(f"QR code saved at: {result_filepath}")
